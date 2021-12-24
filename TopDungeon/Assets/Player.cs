@@ -26,5 +26,8 @@ public class Player : MonoBehaviour
         else if (moveDelta.x < 0)
             transform.localScale = new Vector3(-1, 1, 1);
 
+        // make it move
+        transform.Translate(moveDelta * Time.deltaTime);
+
     }
 }

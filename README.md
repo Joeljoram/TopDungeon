@@ -1,2 +1,2 @@
 # TopDungeon
-A top down RPG Game
+A top down RPG game currently in development made with unity.

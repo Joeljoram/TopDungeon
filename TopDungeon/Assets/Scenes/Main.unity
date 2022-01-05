@@ -22349,9 +22349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b3b5dede6347d4e862e63c29b40bbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookAt: {fileID: 1217677972}
-  boundX: 0.3
-  boundY: 0.15
+  target: {fileID: 1217677972}
 --- !u!1 &1973810177
 GameObject:
   m_ObjectHideFlags: 0

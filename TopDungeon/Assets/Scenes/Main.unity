@@ -2797,12 +2797,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df96de66e24e1e44983c5b16f826c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 10
+  hitpoint: 3
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
   xpValue: 1
-  triggerLength: 1
-  chaseLength: 5
+  triggerLength: 0.3
+  chaseLength: 1
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!1001 &436732875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22474,7 +22488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoint: 10
   maxHitpoint: 10
-  pushRecoverySpeed: 0.2
+  pushRecoverySpeed: 0.1
 --- !u!61 &1217677974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22706,7 +22720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686366568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.361, y: 0, z: 0}
+  m_LocalPosition: {x: -0.361, y: 0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -22928,6 +22942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129855273}
   - component: {fileID: 2129855274}
+  - component: {fileID: 2129855275}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -22975,6 +22990,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0999172, y: 0.079661116}
   m_EdgeRadius: 0
+--- !u!114 &2129855275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129855272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504ddc27c57ae7b428a69b420b1c36fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  damage: 1
+  pushForce: 2
 --- !u!1001 &3618647971979205554
 PrefabInstance:
   m_ObjectHideFlags: 0

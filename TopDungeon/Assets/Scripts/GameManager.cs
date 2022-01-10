@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
 
         //change weapon level
 
-        Debug.Log("LoadState");
+       
     }
 
 

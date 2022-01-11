@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : Mover
+
 {
     //Experience
     public int xpValue = 1;
@@ -27,9 +28,6 @@ public class Enemy : Mover
         playerTransform = GameManager.instance.player.transform;
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
-
-
-
     }
 
     private void FixedUpdate()
@@ -43,7 +41,7 @@ public class Enemy : Mover
             {
                 if(!collidingWithPlayer)
                 {
-                    UpdateMotor((playerTransform.position).normalized);
+                    UpdateMotor((playerTransform.position - transform.position).normalized);
                 }
             }
             else
@@ -76,7 +74,7 @@ public class Enemy : Mover
             hits[i] = null;
         }
     }
-
+    
     protected override void Death()
     {
         Destroy(gameObject);

@@ -3107,7 +3107,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 75
+  m_Text: 
 --- !u!222 &429038285
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23770,7 +23770,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSprites: []
-  weaponSprite: []
+  weaponSprite:
+  - {fileID: -1988828135353101337, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
+  - {fileID: 4971049064686688367, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
+  - {fileID: 4204374477710404856, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
+  - {fileID: -3149050133103254212, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
+  - {fileID: -5574873882498854606, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
+  - {fileID: -9052792337493064725, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
+  - {fileID: -7870807981238829915, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
   weaponPrices: 
   xpTable: 
   player: {fileID: 1217677973}
@@ -24340,6 +24347,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: show
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2110746820}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: UpdateMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1645601964
@@ -25082,6 +25101,7 @@ GameObject:
   - component: {fileID: 2110746814}
   - component: {fileID: 2110746819}
   - component: {fileID: 2110746818}
+  - component: {fileID: 2110746820}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -25202,6 +25222,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2110746820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110746813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aa6e9e96e9c4c64cb8cb71330ffc236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelText: {fileID: 281090022}
+  hitpointText: {fileID: 796884917}
+  pesosText: {fileID: 429038284}
+  upgradecostText: {fileID: 681886560}
+  xpText: {fileID: 1698868400}
+  CharacterSelectionSprite: {fileID: 338025346}
+  WeaponSprite: {fileID: 463248592}
+  xpBar: {fileID: 1313950704}
 --- !u!1 &2129855272
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,36 @@ public class CharacterMenu : MonoBehaviour
     public Image WeaponSprite;
     public RectTransform xpBar;
 
+    public void onArrowClick(bool right)
+    {
+        if(right)
+        {
+            currentCharacterSelection++;
 
+            if(currentCharacterSelection == GameManager.instance.playerSprites.Count)
+
+            {
+                OnSelectionChanged();
+            }
+            else
+            {
+                currentCharacterSelection--;
+
+                if (currentCharacterSelection < 0)
+                    currentCharacterSelection = GameManager.instance.playerSprites.Count - 1;
+
+                {
+                    OnSelectionChanged();
+                }
+            }
+
+
+        }
+    }
+    private void OnSelectionChanged()
+    {
+        CharacterSelectionSprite.sprite = GameManager.instance.playerSprites[currentCharacterSelection];
+    }
 
 
 

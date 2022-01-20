@@ -66,5 +66,11 @@ public class Weapon : Collidable
         anim.SetTrigger("New Trigger"); 
     }
 
+    public void UpgradeWeapon()
+    {
+        weaponLevel++;
+        spriteRenderer.sprite = GameManager.instance.weaponSprite[weaponLevel];
 
+
+    }
 }

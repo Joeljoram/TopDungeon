@@ -89,6 +89,8 @@ public class GameManager : MonoBehaviour
         pesos = int.Parse(data[1]);
         experience = int.Parse(data[2]);
         weapon.weaponLevel = int.Parse(data[3]);
+
+
         //change weapon level
 
        

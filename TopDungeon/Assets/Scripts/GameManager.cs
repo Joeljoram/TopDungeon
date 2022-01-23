@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
         s += "0" + "|";
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
-        s += "0";
+        s += weapon.weaponLevel.ToString();
 
 
         PlayerPrefs.SetString("SaveState", s);
@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
         //change player skin
         pesos = int.Parse(data[1]);
         experience = int.Parse(data[2]);
-
+        weapon.weaponLevel = int.Parse(data[3]);
         //change weapon level
 
        

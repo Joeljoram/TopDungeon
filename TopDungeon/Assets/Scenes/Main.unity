@@ -23797,10 +23797,10 @@ MonoBehaviour:
   - {fileID: -5574873882498854606, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
   - {fileID: -9052792337493064725, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
   - {fileID: -7870807981238829915, guid: c61512431b7c4094f88909bbeecdb26e, type: 3}
-  weaponPrices: 
+  weaponPrices: 1e0000004600000082000000c80000009001000020030000
   xpTable: 
   player: {fileID: 1217677973}
-  weapon: {fileID: 0}
+  weapon: {fileID: 890352628}
   floatingTextManager: {fileID: 671840008}
   pesos: 0
   experience: 0

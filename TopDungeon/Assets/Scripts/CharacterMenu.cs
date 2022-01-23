@@ -51,7 +51,7 @@ public class CharacterMenu : MonoBehaviour
     }
     public void UpdateMenu()
     {
-        WeaponSprite.sprite = GameManager.instance.weaponSprite[0];
+        WeaponSprite.sprite = GameManager.instance.weaponSprite[GameManager.instance.weapon.weaponLevel];
         upgradecostText.text = "NOT IMPLEMENTED";
 
 

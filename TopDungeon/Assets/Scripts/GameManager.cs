@@ -94,6 +94,17 @@ public class GameManager : MonoBehaviour
         }
         return xp;
     }
+    public void GrantXp(int xp)
+    {
+        int currLevel = GetCurrentLevel();
+        experience += xp;
+        if (currLevel < GetCurrentLevel())
+            OnLevelUp();
+    }
+    public void OnLevelUp()
+    {
+        Debug.Log("Level Up!");
+    }
 
 
     //Save gamestate

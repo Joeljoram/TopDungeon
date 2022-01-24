@@ -11,6 +11,11 @@ public class Weapon : Collidable
     public int weaponLevel = 0;
     private SpriteRenderer spriteRenderer;
 
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
 
     //swing 
     private Animator anim;
